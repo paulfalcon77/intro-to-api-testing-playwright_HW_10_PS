@@ -44,7 +44,6 @@ test('post order with correct data should receive code 201', async ({ request })
   expect(typeof responseBody.courierId).toBe('number')
 })
 
-
 // Homework 10
 
 test.describe('HW_10', () => {
