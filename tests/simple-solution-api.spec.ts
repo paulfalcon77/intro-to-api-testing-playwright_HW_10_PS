@@ -273,7 +273,7 @@ test.describe('HW_10', () => {
   test('13-DELETE  Delete order with valid ID ( 1 - 10) without API key , status 401', async ({
     request,
   }) => {
-    const requestHeaders: { api_key: string } = {}
+    const requestHeaders: { api_key?: string } = {}
 
     const response = await request.delete('https://backend.tallinn-learning.ee/test-orders/2', {
       headers: requestHeaders,
